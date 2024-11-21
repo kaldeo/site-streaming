@@ -91,14 +91,6 @@ if (isset($_GET['id_abonnement'])) {
     echo 'ID d\'abonnement non spécifié.';
 }
 ?>
-
-
-
-
     </div>
-
-    <script src="./script.js"></script>
-
-
 </body>
 </html>

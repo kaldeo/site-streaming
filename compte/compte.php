@@ -175,19 +175,9 @@
 			?>
 		</div>
 	</div>
-
-
-
 	<div class="button-container">
 		<a href="login/login.html">Se Connecter</a>
 		<a href="signup/signup.html">S'Inscrire</a>
 	</div>
-
-
-
-	
-
-	<script  src="./script.js"></script>
-
 </body>
 </html>
