@@ -4,7 +4,7 @@
 
 2. Créer une nouvelle base de données, puis importer streaming.sql dans celle-ci.
 
-3.
+3. Changez les données de connexions dans le fichier connexion.php
 
 Aller dans un navigateur et tapez : 
 
