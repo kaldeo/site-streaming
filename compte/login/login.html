@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>GabouFlix</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+	.notification {
+		display: none;
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		padding: 10px;
+		background-color: green;
+		color: white;
+		border-radius: 5px;
+	}
+  </style>
+</head>
+<body>
+
+	<header class="header-outer">
+		<div class="header-inner responsive-wrapper">
+			<div class="header-logo">
+				<img src="../../img/gabouflix.png" />
+			</div>
+			<nav class="header-navigation">
+				<a href="../../accueil/accueil.html">Accueil</a>
+				<a href="../../about/about.html">À propos</a>
+				<a href="../../programmes/programmes.php">Programmes</a>
+				<a href="../../abonnements/abonnements.php">Abonnements</a>
+				<a href="../compte.php">Compte</a>
+				<button>Menu</button>
+			</nav>
+		</div>
+	</header>
+
+	<div class="notification" id="notification">Votre compte a été créé avec succès !</div>
+	<script>
+		window.addEventListener('DOMContentLoaded', function() {
+			var urlParams = new URLSearchParams(window.location.search);
+			var signupSuccess = urlParams.get('signup');
+	
+			if (signupSuccess === 'success') {
+				var notification = document.getElementById('notification');
+				notification.style.display = 'block';
+				setTimeout(function() {
+					notification.style.display = 'none';
+				}, 3000); // Durée de la notification en millisecondes (ici, 3000 ms soit 3 secondes)
+			}
+		});
+	</script>
+	
+	
+
+
+    <h2>Connexion</h2>
+    <form action="traitement_connexion.php" method="post">
+        <label for="identifiant">Identifiant :</label>
+        <input type="text" id="identifiant" name="identifiant" required><br><br>
+        
+        <label for="mdp">Mot de passe :</label>
+        <input type="password" id="mdp" name="mdp" required><br><br>
+        
+        <input type="submit" value="Se connecter">
+    </form>
+
+
+
+
+	
+
+	<script  src="./script.js"></script>
+
+</body>
+</html>

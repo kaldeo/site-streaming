@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>GabouFlix</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+	<header class="header-outer">
+		<div class="header-inner responsive-wrapper">
+			<div class="header-logo">
+				<img src="../../img/gabouflix.png" />
+			</div>
+			<nav class="header-navigation">
+				<a href="../../accueil/accueil.html">Accueil</a>
+				<a href="../../about/about.html">À propos</a>
+				<a href="../../programmes/programmes.php">Programmes</a>
+				<a href="../../abonnements/abonnements.php">Abonnements</a>
+				<a href="../compte.php">Compte</a>
+				<button>Menu</button>
+			</nav>
+		</div>
+	</header>
+
+
+	<br>
+	
+
+	<h2>Créer un nouveau compte</h2>
+	<form action="traitement_inscription.php" method="post">
+		<label for="nom">Nom :</label>
+		<input type="text" id="nom" name="nom" required><br><br>
+		
+		<label for="prenom">Prénom :</label>
+		<input type="text" id="prenom" name="prenom" required><br><br>
+		
+		<label for="ddn">Date de naissance :</label>
+		<input type="date" id="ddn" name="ddn" required><br><br>
+		
+		<label for="adresse">Adresse :</label>
+		<input type="text" id="adresse" name="adresse"><span style="color: #999;"> (Facultatif)</span><br><br>
+		
+		<label for="email">Adresse email :</label>
+		<input type="email" id="email" name="email"><span style="color: #999;"> (Facultatif)</span><br><br>
+		
+		<label for="identifiant">Identifiant :</label>
+		<input type="text" id="identifiant" name="identifiant" required><br><br>
+		
+		<label for="mdp">Mot de passe :</label>
+		<input type="password" id="mdp" name="mdp" required><br><br>
+		
+		<input type="submit" value="Créer un compte">
+	</form>
+
+
+	
+
+	<script  src="./script.js"></script>
+
+</body>
+</html>
